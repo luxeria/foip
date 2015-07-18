@@ -1,0 +1,25 @@
+\section{Software-Installation}
+Für die in diesem Dokument behandelten Code-Beispiele wird GNU Octave
+verwendet und das image Softwarepaket. Die Installation von GNU Octave
+erfolgt bei Unixoiden Systemen über den Paketmanager und kann direkt
+per Kommandozeile erfolgen. Hier das Beispiel für den Paketmanager
+pacman von Archlinux und aptitude von Ubuntu (Debian):
+
+\begin{lstlisting}
+sudo pacman -S octave
+\end{lstlisting}
+
+\begin{lstlisting}
+sudo apt-get install octave
+\end{lstlisting}
+
+\subsection{Forge}
+Die Instalation von Erweiterungen von Octave kann direkt aus der
+Kommandozeile von Octave erfolgen. Hierzu kann entweder das gewünschte
+Softwarepaket manuell lokal heruntergeladen und danach installiert werden
+oder direkt aus der Datenbank bezogen und installiert werden durch
+Octave.
+
+\begin{lstlisting}
+pkg install -forge image
+\end{lstlisting}
