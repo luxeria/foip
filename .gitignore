@@ -1,0 +1,17 @@
+# ignore vim swap files
+*.swp
+
+# ignore pdf files
+*.pdf
+
+# ignore latex dumps
+*.aux
+*.log
+*.toc
+*.bbl
+*.blg
+*.lof
+*.out
+*.synctex.gz
+*.nav
+*.snm
