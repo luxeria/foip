@@ -14,3 +14,15 @@ The project is in the initial phase. Next steps are
 * prepare a wiki page
 * prepare a LaTeX document
 * organise literature
+
+# list of topics
+[ ] installing GNU Octave
+[ ] GNU Octave fundamentals
+[ ] installing the image package
+[ ] reading and writing images
+[ ] reading pixel data
+[ ] statistical analysis of pixel values (histogram)
+[ ] quantization of image data
+[ ] rasterization of image data
+[ ] dot-based image manipulation using LUT (look up table)
+more topics will follow 
