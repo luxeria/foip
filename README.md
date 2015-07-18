@@ -25,4 +25,4 @@ The project is in the initial phase. Next steps are
 - [ ] quantization of image data
 - [ ] rasterization of image data
 - [ ] dot-based image manipulation using LUT (look up table)
-more topics will follow 
+* more topics will follow ...
