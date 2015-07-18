@@ -1,0 +1,41 @@
+\section{Daten laden und speichern}
+Einstieg in jegliche Bildverarbeitung ist das Einlesen der Bilddaten und
+auch deren Speicherung. Im einfachsten Fall kann der Prozess in drei Teile
+gegliedert werden:
+
+\begin{enumerate}
+	\item Originaldatei einlesen
+	\item Manipulation
+	\item Manipulierte Daten ablegen
+\end{enumerate}
+
+\subsection{Graustufenbilder}
+Diese drei elementaren Schritte sind hier mit den beiden Funktionen 
+\lstinline{imread()} und \lstinline{imwrite()} des image package ein
+einem Pseudobeispiel dargestellt:
+
+\begin{lstlisting}
+I = imread("input_image.png");		% read image
+J = my_image_processing(I);		% manipulate image
+imwrite(J, "output_image.png");		% write image
+\end{lstlisting}
+
+Durch die Verwendung von \lstinline{imread()} auf Graustufenbilder wird
+die Grafik in eine entsprechende Matrix gespeichert mit den Pixelwerten.
+Diese kann per \lstinline{imshow()} betrachtet werden.
+
+\subsection{RGB Dateien}
+Beim Einlesen von Graustufenbildern sind die Pixelwerte direkt in einer
+2D Matrix ableget. Beim Einlesen von RGB-Bildern wird die Grafik in eine
+mehrschichtige 2D Matrix ableget, wobei jede Matrix die Pixelwerte für
+eine Farbe enthält. Die einzelnen Matrizen können wiederum als
+Graustufenbilder behandelt werden. Im Folgenden wird das Zerlegen eines
+RGB-Bildes in die einzelnen Farblayer aufgezeigt.
+
+\begin{lstlisting}
+Image = imread("input_rgb_image.png");	% read the RGB image
+
+Red   = Image(:,:,1);			% extract red layer
+Green = Image(:,:,2);			% extract green layer
+Blue  = Image(:,:,3);			% extract blue layer
+\end{lstlisting}

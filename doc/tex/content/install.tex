@@ -1,4 +1,4 @@
-\section{Software-Installation}
+\section{Installation von GNU Octave}
 Für die in diesem Dokument behandelten Code-Beispiele wird GNU Octave
 verwendet und das image Softwarepaket. Die Installation von GNU Octave
 erfolgt bei Unixoiden Systemen über den Paketmanager und kann direkt
@@ -13,7 +13,7 @@ sudo pacman -S octave
 sudo apt-get install octave
 \end{lstlisting}
 
-\subsection{Forge}
+\subsection{Erweiterungen}
 Die Instalation von Erweiterungen von Octave kann direkt aus der
 Kommandozeile von Octave erfolgen. Hierzu kann entweder das gewünschte
 Softwarepaket manuell lokal heruntergeladen und danach installiert werden
@@ -22,4 +22,19 @@ Octave.
 
 \begin{lstlisting}
 pkg install -forge image
+\end{lstlisting}
+
+Ist eine solche Erweiterung installiert wird diese nicht automatisch geladen
+wenn eine neue Octave session eröffnet wird, sondern muss manuell geladen
+werden.
+
+\begin{lstlisting}
+pkg load image
+\end{lstlisting}
+
+Bei der Verwendung von vielen Erweiterungen können auch sämtliche mit der
+Angabe \lstinline{all} geladen werden.
+
+\begin{lstlisting}
+pkg load all
 \end{lstlisting}
