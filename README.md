@@ -19,7 +19,7 @@ The project is in the initial phase. Next steps are
 - [ ] installing GNU Octave
 - [ ] GNU Octave fundamentals
 - [ ] installing the image package
-- [ ] reading and writing images
+- [x] reading and writing images
 - [ ] reading pixel data
 - [ ] statistical analysis of pixel values (histogram)
 - [ ] quantization of image data
