@@ -6,7 +6,12 @@ close 'all'	% close all windows
 printf("\nSTART OF SCRIPT\n");
 
 % load the original image
-ImageOrig = imread("../../data/building.jpg");
+imageSource = "../../data/building.jpg";
+imageExists = exist(imageSource);
+if !imageExists
+        error("Image not found! Did you download the images with get_data.sh?");
+else
+ImageOrig = imread(imageSource);
 
 % convert the RGB image to a grayscale image
 ImageGray = rgb2gray(ImageOrig);
@@ -24,6 +29,8 @@ title("Converted Grayscale Image");
 
 % save the grayscale image
 imwrite(ImageGray, "building_gray.jpg");
+
+end
 
 % print out message
 printf("\nEND OF SCRIPT\n");
