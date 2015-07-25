@@ -31,3 +31,8 @@ The project is in the initial phase. Next steps are
 
 To get the image data run the Bash script [get_data.sh](./data/get_data.sh).
 It will download all images needed for all the examples in this repository.
+
+# FAQ
+
+* How to start GNU Octave without the GUI?
+    * Just start it with ''octave --no-gui''
