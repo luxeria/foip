@@ -15,3 +15,8 @@
 *.synctex.gz
 *.nav
 *.snm
+
+# ignore image data
+*.jpg
+*.png
+*.bmp
