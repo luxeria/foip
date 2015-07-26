@@ -20,7 +20,7 @@ The project is in the initial phase. Next steps are
 - [ ] GNU Octave fundamentals
 - [ ] installing the image package
 - [x] reading and writing images
-- [ ] reading pixel data
+- [x] reading pixel data
 - [ ] statistical analysis of pixel values (histogram)
 - [ ] quantization of image data
 - [ ] rasterization of image data
