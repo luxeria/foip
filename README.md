@@ -21,7 +21,7 @@ The project is in the initial phase. Next steps are
 - [ ] installing the image package
 - [x] reading and writing images
 - [x] reading pixel data
-- [ ] statistical analysis of pixel values (histogram)
+- [x] statistical analysis of pixel values (histogram)
 - [ ] quantization of image data
 - [ ] rasterization of image data
 - [ ] dot-based image manipulation using LUT (look up table)
