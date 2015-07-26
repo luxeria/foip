@@ -24,7 +24,7 @@ The project is in the initial phase. Next steps are
 - [x] statistical analysis of pixel values (histogram)
 - [x] quantization of image data
 - [x] rasterization of image data
-- [ ] dot-based image manipulation using LUT (look up table)
+- [x] dot-based image manipulation using LUT (look up table)
 * more topics will follow ...
 
 # getting image data
