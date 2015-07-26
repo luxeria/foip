@@ -24,18 +24,22 @@ else
         imshow(Image);
         title("Original Image");
      
-        % get histogramm results
+        % get histogramm results and do some calculations
         [count, value] = imhist(Image);
         
-        % calculate relative counts
-        relCount = count/numel(Image);
+        relCount = count/numel(Image);    % calculate relative counts
+        cumCount = cumsum(relCount);      % calculate cumulative count
         
-        % calculate cumulative count
-        cumCount = cumsum(relCount);
+        grayMean   = mean2(Image);        % calculate mean (2D)
+        grayStdDev = std2(Image);         % calculate standard deviation (2D)
         
         % show absolute values
         subplot(2,2,2);
+        hold on;
         plot(value, count);
+        line([grayMean grayMean], [0 max(count)/8], "Linewidth", 1, "Color", [1 0 0]);
+        line([(grayMean-grayStdDev) (grayMean+grayStdDev)], [(max(count)/8) (max(count)/8)], "Linewidth", 1, "Color", [1 0 1]);
+        hold off;
         title("absolute count");
         xlabel("gray value");
         ylabel("count");
