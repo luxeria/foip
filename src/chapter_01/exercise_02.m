@@ -51,14 +51,23 @@ else
         subplot(2,2,2);
         plot(redPixels, 'r');
         title("red line");
+        xlabel("pixel position in x direction");
+        ylabel("gray value");
+        axis([0 sx 0 255]);
         
         subplot(2,2,3);
         plot(greenPixels, 'g');
         title("green line");
+        xlabel("pixel in x direction");
+        ylabel("gray value");
+        axis([0 sx 0 255]);
         
         subplot(2,2,4);
         plot(bluePixels, 'b');
-        title("blue line");    
+        title("blue line");
+        xlabel("pixel in x direction");
+        ylabel("gray value");
+        axis([0 sx 0 255]);    
 end
 
 % print out message
